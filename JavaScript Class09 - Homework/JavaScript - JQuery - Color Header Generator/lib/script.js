@@ -1,4 +1,4 @@
-console.log(`Hello There`)
+console.log(`Hello There`);
 
 
 $(document).ready(function() {
@@ -9,7 +9,7 @@ $(document).ready(function() {
     let button = $("button").first();
     let userInput = $("input").first();
     let userColor = $("#color").first();
-    let messageHeader = $("*").find("h3").first()
+    let messageHeader = $("*").find("h3").first();
 
     // Сите бои во HTML //
 
@@ -169,7 +169,7 @@ $(document).ready(function() {
         return `Pick a Color:\n\n${allColors}`
     }
 
-    console.log(everyColorInHtml())
+    console.log(everyColorInHtml());
 
 
     button.click(function() {
@@ -181,17 +181,17 @@ $(document).ready(function() {
         } else {
 
             if (userColor.val() === "") {
-                messageHeader.text("Please enter something")
+                messageHeader.text("Please enter something");
 
             } else if ((userColor.val().toLowerCase() === "transparent")) {
-                messageHeader.text("There is a color but you can't see it! ;)")
+                messageHeader.text("There is a color but you can't see it! ;)");
 
             } else {
-                messageHeader.text("Please enter valid color")
+                messageHeader.text("Please enter valid color");
             }
         }
-        userColor.val("")
-        userInput.val("")
+        userColor.val("");
+        userInput.val("");
 
     });
 
@@ -203,47 +203,10 @@ $(document).ready(function() {
                 return true
             }
         }
-        return false
+        return false;
 
-    }
-
-
-
-
-    // function validTextColour(colorString) {
-
-    //     if (colorString === "") { return messageHeader.text("Please enter something"); }
-    //     if (colorString !== "htmlColorNames") { return messageHeader.text("Please enter valid color!"); }
-    //     if (colorString === "transparent") { return messageHeader.text("There is a color but you can't see it! ;)"); }
-
-    //     let text = document.createElement("text");
-    //     text.style.color = "rgb(0, 0, 0)";
-    //     text.style.color = colorString;
-    //     if (text.style.color !== "rgb(0, 0, 0)") { button.after(`<h1 style="color: ${userColor.val()};"> ${userInput.val()}</h1>`); }
-    //     text.style.color = "rgb(255, 255, 255)";
-    //     text.style.color = colorString;
-    //     text.style.color !== "rgb(255, 255, 255)";
-
-
-    // }
-
-    // document.getElementById("testField").addEventListener("input", function() {
-    //     document.getElementById("result").textContent = validTextColour(this.value);
-    // });
-
-
-    /* $('#color3').submit(function() {
-            let bkcolor = $('#bkcolor').val();
-            $("#clrtoggle").attr("style", '');
-            $("#clrtoggle").css("background-color", bkcolor);
-            createCookie("color", bkcolor);
-            let dfndclr = $("#clrtoggle").attr("style");
-            if (dfndclr == "") {
-                alert("Not a Valid Color");
-            }
-            return false;
-        }); */
+    };
 
 
 
-})
+});

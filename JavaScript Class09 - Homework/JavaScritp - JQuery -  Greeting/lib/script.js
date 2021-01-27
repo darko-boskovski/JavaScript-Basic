@@ -9,7 +9,6 @@ $(document).ready(function() {
     let button = $("button").first();
     let userInput = $("input").first();
     let header = $("h1:first-child");
-    console.log(header)
 
 
     button.click(function() {
