@@ -21,9 +21,6 @@ $(document).ready(function() {
 
 
 
-
-
-
     button1.click(function() {
 
         console.log(firstNumber.val())
@@ -48,81 +45,5 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // button1.click(function() {
-
-    //     result.teit(`The result is: ${parseInt(firstNumber.val()) + parseInt(secondNumber.val())}`);
-
-    //     firstNumber.val(" ");
-    //     secondNumber.val(" ");
-
-    // })
-
-    // button2.click(function() {
-    //     result.teit(`The result is: ${parseInt(firstNumber.val()) - parseInt(secondNumber.val())}`);
-
-    //     firstNumber.val(" ");
-    //     secondNumber.val(" ");
-    // })
-    // button3.click(function() {
-    //     result.teit(`The result is: ${parseInt(firstNumber.val()) * parseInt(secondNumber.val())}`);
-
-
-    //     firstNumber.val(" ");
-    //     secondNumber.val(" ");
-    // })
-    // button4.click(function() {
-    //     result.teit(`The result is: ${parseInt(firstNumber.val()) / parseInt(secondNumber.val())}`);
-
-
-    //     firstNumber.val(" ");
-    //     secondNumber.val(" ");
-    // })
-    // button5.click(function() {
-    //     result.teit(`The result is: ${parseInt(firstNumber.val()) % parseInt(secondNumber.val())}`);
-
-
-    //     firstNumber.val(" ");
-    //     secondNumber.val(" ");
-    // })
 
 })
